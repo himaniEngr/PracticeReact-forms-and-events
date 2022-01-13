@@ -1,9 +1,9 @@
 import React from "react";
 
 class SearchBar extends React.Component {
-  onInputChange(event) {
-    console.log(event.target.value);
-  }
+  // onInputChange(event) {
+  //   console.log(event.target.value);
+  // }
   onInputClick() {
     console.log("Input was clicked.");
   }
@@ -16,7 +16,7 @@ class SearchBar extends React.Component {
             <label>Image Search</label>
             <input
               type="text"
-              onChange={this.onInputChange}
+              onChange={(event) => console.log(event.target.value)}
               onClick={this.onInputClick}
             />
           </div>
